@@ -1,0 +1,262 @@
+/*
+---------------------------------------------
+Índice
+------------------------------------------------
+1. Typography
+2. Main Nav
+3. Home
+4. About
+5. Work
+6. Single Work
+7. Pricing
+8. Contact
+--------------------------------------------- */
+
+html {font-family: 'Caveat', cursive;}
+.font-caveat{
+  font-family: 'Caveat',cursive;
+}
+/* Typography */
+p, a {font-weight: 400;}
+.nav-item {font-family: 'Caveat', cursive; font-size: x-large !important;}
+.h1 {font-family: 'Caveat', cursive;}
+.h2 {font-size: 65px;font-family: 'Caveat', cursive;}
+.h3 {font-size: 40px;}
+
+.logo-footer{
+  font-family:'Caveat', cursive;
+  font-size: 30px;
+  font-weight: bold;
+}
+.light-300 {
+  font-family: 'Caveat', cursive !important;
+  font-weight: 300;
+  font-size: 30px;
+}
+.regular-200{
+  font-family: 'Caveat-semibold', cursive !important;
+  font-weight: 200;
+  font-size: 20px;
+}
+.regular-100{
+  font-family: 'Caveat-semibold' !important;
+  font-weight: 100;
+  font-size: 17px;
+}
+.tarjetas-servicios
+{
+  height: 250px;
+
+}
+.regular-400 {
+  font-family: 'Caveat-semibold', cursive !important;
+  font-weight: 400;
+  font-size: 40px;
+}
+.semi-bold-600 {
+  font-family: 'Caveat', cursive !important;
+  font-weight: 600;
+  font-size: 60px;
+}
+.typo-space-line::after,
+.typo-space-line-center::after {
+  content: "";
+  width: 150px;
+  display:block;
+  position: absolute;
+  border-bottom:  5px solid #6266ea;
+  padding-top: .5em;
+}
+.typo-space-line-center::after {
+  left: 50%;
+  margin-left: -75px;
+}
+/* Main Nav */
+#main_nav .nav-item .nav-link:hover {color: #fff;}
+/* Home */
+#adopta-banner {
+
+  background-image: url('./../img/dog-4672117_1920.jpg');
+  background-position: center ; background-size: cover;
+  height: 100%;
+  min-height: 60vh;
+  width: 100%;
+}
+#index_banner {
+  background-image: url('./../img/banner-bg-01.jpg');
+  background-position: center center; background-size: cover;
+  height: 100%;
+  min-height: 60vh;
+  width: 100%;
+}
+#index_banner .carousel-item {
+  min-height: 60vh;
+}
+#index_banner .carousel-control-prev i,
+#index_banner .carousel-control-next i {
+  color: #6266ea !important;
+  text-decoration: none;
+  font-size: 4em;
+}
+#index_banner .carousel-inner {
+  height: 80vh;
+}
+#index_banner .carousel-indicators li,
+#index_banner .carousel-indicators.active {
+  background-color: #6266ea !important;
+  /* // las rayas de abajo del carrousel van de color azul */
+}
+.service-wrapper .service-footer {
+  max-width: 720px;
+}
+.service-work.card {
+  border-radius: 10px !important;
+  cursor: pointer;
+}
+.service-work .service-work-vertical {
+	background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 33.33%, rgba(255,255,255,1) 66.66%, rgba(255,255,255,0) 99.99%);
+  background-size: 300% 300%;
+  background-position: 0% 100%;
+  transition: .5s;
+}
+.service-work .service-work-vertical:hover {
+  background-position: 0% 0%;
+  transition: .5s;
+}
+.service-work .service-work-vertical:hover * {
+  color: #000;
+  border-color: #000;
+  transition: .5s;
+}
+.recent-work.card{
+  border-radius: 10px !important;
+}
+.recent-work .recent-work-vertical {
+	background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 33.333%, rgba(97,84,199,1) 66.666%, rgba(255,255,255,0) 99.999%);
+  background-size: 300% 300%;
+  background-position: 0% 100%;
+  transition: .5s;
+  cursor: pointer;
+}
+.recent-work .recent-work-vertical:hover {
+  background-position: 0% 0%;
+  transition: .5s;
+}
+.recent-work .recent-work-vertical:hover div.recent-work-content {
+  top: 50%;
+  margin-top: -2.5em;
+  position: absolute;
+}
+.recent-work .recent-work-vertical:hover * {
+  color: white;
+  transition: .5s;
+}
+/* About */
+#work_banner {
+  background-image: url('./../img/dog-3525010_1920.jpg');
+  background-position: center center; background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.progress {
+  height: 8px;
+}
+.objective-icon {
+  border-radius: 13px;
+  width: 8rem;
+}
+.partner-wap {
+  background-color: #7276ec;
+  transition: 1s;
+  cursor: pointer;
+}
+.partner-wap:hover {
+  background-color: #b1b3f5;
+}
+.why-us {
+  background: rgb(239,239,253);
+  background: -moz-linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
+  background: -webkit-linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
+  background: linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#efeffd",endColorstr="#ffffff",GradientType=1);
+}
+.team-member-img {
+  transition-duration: 0.15s;
+}
+.team-member:hover .team-member-img {
+  padding: 10px !important;
+}
+
+/* Work */
+/* Singel Work */
+#work_single_banner {
+  background-image: url('./../img/banner-bg-02.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.related-content {
+  border-radius: 20px;
+  cursor: pointer;
+}
+/* Pricing */
+.pricing-list {
+  margin-bottom: 1px;
+}
+.pricing-table {
+  max-width: 350px;
+  margin: auto;
+}
+.pricing-table,
+.pricing-horizontal {
+  border-radius: 15px !important;
+}
+/* Contact */
+#floatingtextarea {
+  height: 150px
+}
+/* Footer */
+footer a.text-light:hover {
+  color: #bfbfbf !important;
+  transition-duration: 0.15s;
+}
+
+#section-nuestroEquipo{
+  background-image: url('./../img/dogs-4900774_1280.jpg');
+  background-position: initial; background-size: cover;
+  padding-top: 70px;
+  padding-bottom: 333px;
+  height: 100%;
+  width: 100%;
+}
+#div_nuestroTrabajo{
+  background-image: url('./../img/dog-5519360_1920.jpg');
+  background-position: initial; background-size: cover;
+  padding-top: 70px;
+  padding-bottom: 700px;
+  height: 570px;
+  width: 100%;
+}
+#donanteBronce{
+  background-image: url('./../img/pexels-andres-ayrton-6578497.jpg');
+  background-position: initial; background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+#donantePlata{
+  background-image: url('./../img/pexels-kenneth-carpina-2847949.jpg');
+  background-position: initial; background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+#donanteOro{
+  background-image: url('./../img/pexels-gillian-harrison-4668425.jpg');
+  background-position: initial; background-size: cover;
+  
+}
+/* .nav-link .active{
+  color:white
+} */

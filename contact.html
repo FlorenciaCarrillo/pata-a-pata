@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <title>Pata a Pata - Adopciones Caninas</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!----- viewport para apple device-width = ancho pantalla initial-scale es que inicia sin ningún zoom -->
+        <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+        <!----- icono para apple y safari -->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+        <!-- Load Require CSS -->
+        <link href="assets/css/bootstrap-litera.min.css" rel="stylesheet">
+        <!-- iconos  -->
+        <link href="assets/css/boxicon.min.css" rel="stylesheet">
+        <link href="assets/lib/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+        <link href="assets/lib/fontawesome/css/all.min.css" rel="stylesheet">
+        <!-- tipo de letra -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    
+        <!-- carga CSS -->
+        <link rel="stylesheet" href="assets/css/estilos.css">
+    </head>
+
+<body>
+    <!-- Header -->
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
+
+        <!--navbar-expand-lg = envoltorio para que el navbar se estire en lg
+	navbar-light = texto negro de la letra
+	bg-white = fondo de color blanco
+	-->
+
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand h1" href="index.html">
+                <!--navbar-brand = clase se utiliza para resaltar la marca o logotipo de su página-->
+                <i class='bx bx-home-heart bx-tada-hover bx-sm text-dark'></i>
+                <!--	bx bx-buildings = icono del logo de la web: 
+				http://www.unisvg.com/icon-sets/bx/bx-buildings.html 
+				https://boxicons.com/
+				-->
+
+                <span class="text-dark h4">Pata a </span><span class="text-primary h4">Pata </span></a>
+
+            <!--	boton de hamburguesa -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <!------------------------------------------- Opciones del Menu		-->
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+                id="navbar-toggler-success">
+
+                <!-------collapse navbar-collapse= para agrupar y ocultar el contenido de la barra de navegación 
+		por un punto de interrupción principal.
+		flex-fill = obliga a que todos los elementos tengan el mismo tamaño de ancho
+		d-lg-flex = utilidades para crear un contenedor flexbox y transforme los elementos secundarios 
+		directos en elementos flexibles
+		-->
+                <div class="flex-fill mx-xl-5 mb-2">
+                    <!--	  mx=para clases que establecen tanto *-lefty*-right-->
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+                        <!--   .navbar-nav para una navegación ligera y de altura completa 
+					   (incluida la compatibilidad con menús desplegables).-->
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">Home</a>
+                            <!-- px = padding y mx es el margin 
+						rounded-pill =genera ese boton con bordes redondeados rounded-circle-->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="about.html">Sé parte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="work.html">Trabajos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="pricing.html">Doná</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3 active"
+                                href="contact.html">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!---------------------------------------------------------Fin de las opciones del menu
+------------------------------------------------------------ Inicio de los iconos del menu-->
+                <div class="navbar align-self-center d-flex">
+                    <a class="nav-link" href="#"><i class='bx bx-bell bx-sm bx-tada-hover text-primary'></i></a>
+                    <a class="nav-link" href="#"><i class='bx bx-cog bx-sm text-primary'></i></a>
+                    <a class="nav-link" href="#"><i class='bx bx-user-circle bx-sm text-primary'></i></a>
+                    <!--	https://iconify.design/icon-sets/bx/-->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Close Header -->
+
+
+    <!-- Start Banner Hero -->
+    <section class="bg-light">
+        <div class="container py-4">
+            <div class="row align-items-center justify-content-between">
+                <div class="contact-header col-lg-6">
+                    <!-- <i class="fas fa-paw text-center"></i> -->
+                    <h1 class="h2 pb-3 text-primary">Contáctanos</h1>
+                    <h3 class="h4 regular-200">¡Nuestra orejita siempre atenta!</h3>
+                    <p class="regular-200">
+                        Dejanos tu mensaje y antes de que ladre un PatiAmigo te estaremos contestando <i class="fas fa-paw"></i>
+                    </p>
+                </div>
+                <div class="contact-img col-lg-5 align-items-end col-md-4">
+                    <img src="./assets/img/dog-5021242_960_720.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner Hero -->
+
+
+    <!-- Start Contact -->
+    <section class="container py-5">
+
+        <h1 class="col-12 col-xl-8 h2 text-left text-primary pt-3">¡Sé parte de nuestro PatiEquipo!</h1>
+        <h2 class="col-12 col-xl-8 h4 text-left regular-400">O dejanos tus dudas, consultas o comentarios </h2>
+        <p class="col-12 col-xl-8 text-left text-muted pb-5 light-300">
+            Si hay algo que nos caracteriza es el interés por nuestros perritos y por las personas que nos apoyan. Aquí estamos para escucharte.
+        </p>
+
+        <div class="row pb-4">
+            <!-- Start Contact Form -->
+            <div>
+                <form class="contact-form row" method="post" action="#" role="form">
+
+                    <div class="col-lg-6 mb-4">
+                        <div class="form-floating">
+                            <input type="text" class="form-control form-control-lg light-300" id="floatingname" name="inputname" placeholder="Name">
+                            <label for="floatingname light-300">Nombre</label>
+                        </div>
+                    </div><!-- End Input Name -->
+
+                    <div class="col-lg-6 mb-4">
+                        <div class="form-floating">
+                            <input type="text" class="form-control form-control-lg light-300" id="floatingemail" name="inputemail" placeholder="Email">
+                            <label for="floatingemail light-300">Email</label>
+                        </div>
+                    </div><!-- End Input Email -->
+
+                    <div class="col-lg-6 mb-4">
+                        <div class="form-floating">
+                            <input type="text" class="form-control form-control-lg light-300" id="floatingphone" name="inputphone" placeholder="Phone">
+                            <label for="floatingphone light-300">Teléfono</label>
+                        </div>
+                    </div><!-- End Input Phone -->
+
+                    <div class="col-lg-6 mb-4">
+                        <div class="form-floating">
+                            <input type="text" class="form-control form-control-lg light-300" id="floatingcompany" name="inputcompany" placeholder="Company Name">
+                            <label for="floatingcompany light-300">Empresa</label>
+                        </div>
+                    </div><!-- End Input Company Name -->
+
+                    <div class="col-12">
+                        <div class="form-floating mb-4">
+                            <input type="text" class="form-control form-control-lg light-300" id="floatingsubject" name="inputsubject" placeholder="Subject">
+                            <label for="floatingsubject light-300">Asunto</label>
+                        </div>
+                    </div><!-- End Input Subject -->
+
+                    <div class="col-12">
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control light-300" rows="8" placeholder="Message" id="floatingtextarea"></textarea>
+                            <label for="floatingtextarea light-300">Mensaje</label>
+                        </div>
+                    </div><!-- End Textarea Message -->
+
+                    <div class="col-md-12 col-12 m-auto text-end">
+                        <button type="submit" class="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300">Enviar <i class="fas fa-paw text-center"></i></button>
+                    </div>
+
+                </form>
+            </div>
+            <!-- End Contact Form -->
+
+
+        </div>
+    </section>
+    <!-- End Contact -->
+
+
+    <!-- Start Footer -->
+    <footer class="bg-secondary pt-4">
+        <div class="container">
+            <div class="row py-4">
+
+                <div class="col-lg-3 col-12 align-left">
+                    <a class="navbar-brand h1" href="index.html">
+                        <!--navbar-brand = clase se utiliza para resaltar la marca o logotipo de su página-->
+                        <i class='bx bx-home-heart bx-tada-hover bx-sm text-dark'></i>
+                        <!--	bx bx-buildings = icono del logo de la web: 
+                        http://www.unisvg.com/icon-sets/bx/bx-buildings.html 
+                        https://boxicons.com/
+                        -->
+        
+                        <span class="text-dark h4">Pata a </span><span class="text-primary h4">Pata </span></a>
+                    <p class="text-light my-lg-4 my-2">
+                        Donde las patitas se encuentran con los bracitos para transitar juntos el camino.
+                    </p>
+                    <ul class="list-inline footer-icons light-300">
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="http://facebook.com/">
+                                <i class='fab fa-facebook bx-sm'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.linkedin.com/">
+                                <i class='fab fa-linkedin bx-sm'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
+                                <i class='fab fa-whatsapp bx-sm'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.flickr.com/">
+                                <i class='fab fa-flickr bx-sm'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.medium.com/">
+                                <i class='fab fa-medium bx-sm'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h3 class="h4 pb-lg-3 text-light light-300">Nuestro Estudio</h2>
+                        <ul class="list-unstyled text-light light-300">
+                            <li>
+                                <i class='bx-fw fas fa-paw bx-xs me-2'></i><a
+                                    class="text-decoration-none text-light regular-200" href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <i class='bx-fw fas fa-paw bx-xs me-2'></i><a
+                                    class="text-decoration-none text-light regular-200" href="about.html">Nosotros</a>
+                            </li>
+                            <li>
+                                <i class='bx-fw fas fa-paw bx-xs me-2'></i><a
+                                    class="text-decoration-none text-light regular-200" href="work.html">Trabajos</a>
+                            </li>
+                            <li>
+                                <i class='bx-fw fas fa-paw bx-xs me-2'></i></i><a
+                                    class="text-decoration-none text-light regular-200" href="pricing.html">Precios</a>
+                            </li>
+                            <li>
+                                <i class='bx-fw fas fa-paw bx-xs me-2'></i><a
+                                    class="text-decoration-none text-light regular-200" href="contact.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">Trabajos</h2>
+                    <ul class="list-unstyled text-light regular-200">
+                        <li class="pb-2">
+                            <i class='bx-fw fas fa-paw bx-xs me-2'></i><a
+                                class="text-decoration-none text-light py-1" href="#">Marcas</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw fas fa-paw bx-xs me-2'></i><a
+                                class="text-decoration-none text-light py-1" href="#">Negocios</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw fas fa-paw bx-xs me-2'></i><a
+                                class="text-decoration-none text-light py-1" href="#">Marketing</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw fas fa-paw bx-xs me-2'></i><a
+                                class="text-decoration-none text-light py-1" href="#">Redes Sociales</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw fas fa-paw bx-xs me-2'></i><a
+                                class="text-decoration-none text-light py-1" href="#">Soluciones Digitales</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw fas fa-paw bx-xs me-2'></i><a
+                                class="text-decoration-none text-light py-1" href="#">Gráfica</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">Atendemos en:</h2>
+                    <ul class="list-unstyled text-light regular-200">
+                        <li class="pb-2">
+                            <i class='bx-fw fas fa-phone-alt bx-xs'></i><a class="text-decoration-none text-light py-1"
+                                href="tel:010-020-0340">021-2354-4568</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw fas fa-envelope-open bx-xs'></i><a class="text-decoration-none text-light py-1"
+                                href="mailto:info@company.com">info@company.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-100 bg-primary py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-start text-center text-light regular-100">
+                            © Copyright 2021 Marke-Ting. Todos los derechos reservados.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-end text-center text-light regular-100">
+                            Diseñado por <a rel="sponsored" class="text-decoration-none text-light"
+                                href="https://cursophp.com.ar/" target="_blank"><strong>CAC FullStack</strong></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
